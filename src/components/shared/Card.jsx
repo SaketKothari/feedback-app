@@ -5,7 +5,7 @@ function Card({ children, reverse }) {
 
   return (
     <div
-      className='card'
+      className="card"
       style={{
         backgroundColor: reverse ? 'rgba(0,0,0,0.4)' : '#fff',
         color: reverse ? '#fff' : '#000',
@@ -18,11 +18,11 @@ function Card({ children, reverse }) {
 
 Card.defaultProps = {
   reverse: false, // if you want dark set it to true
-}
+};
 
 Card.propTypes = {
   children: PropTypes.node.isRequired,
   reverse: PropTypes.bool,
-}
+};
 
 export default Card;
